@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    environment:
+      - TELEGRAM_BOT_TOKEN=8124962096:AAFMGRKCQXUHU7RyZC8LPKKcm6oMz8ZNuHE
+      - DATABASE_URL=postgres://postgres:postgres@10.10.25.220:5432/dts_bot
+    env_file:
+      - .env
